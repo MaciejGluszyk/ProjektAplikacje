@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gluszyk_mryczko.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/shoppingListButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping_list_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.497" />
+
+    <Button
+        android:id="@+id/drawButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/draw_button"
+        app:layout_constraintLeft_toLeftOf="@+id/shoppingListButton"
+        app:layout_constraintRight_toRightOf="@+id/shoppingListButton"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingListButton" />
+
+    <Button
+        android:id="@+id/apiButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/api_button"
+        app:layout_constraintLeft_toLeftOf="@+id/drawButton"
+        app:layout_constraintRight_toRightOf="@+id/drawButton"
+        app:layout_constraintTop_toBottomOf="@+id/drawButton" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/view_button"
+        app:layout_constraintLeft_toLeftOf="@+id/apiButton"
+        app:layout_constraintRight_toRightOf="@+id/apiButton"
+        app:layout_constraintTop_toBottomOf="@+id/apiButton" />
+
+</android.support.constraint.ConstraintLayout>
